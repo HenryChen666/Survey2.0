@@ -1,0 +1,66 @@
+<html lang="en-US">
+<head>
+    <title>User Interface Survey</title>
+</head>
+
+<body>
+    <h1>National Gallery of Canada Survey</h1>
+    <h2>First Name</h2>
+    <ul>
+    <% for (var i=0; i<results[2].length; i++){ %>
+        <li><%= results[2][i].firstname %> :  <%= results[2][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Last Name</h2>
+    <ul>
+    <% for (var i=0; i<results[6].length; i++){ %>
+        <li><%= results[6][i].lastname %> :  <%= results[6][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Email Address</h2>
+    <ul>
+    <% for (var i=0; i<results[0].length; i++){ %>
+        <li><%= results[0][i].email %> :  <%= results[0][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Where does the National Art Gallery Locate</h2>
+    <ul>
+    <% for (var i=0; i<results[4].length; i++){ %>
+        <li><%= results[4][i].location %> :  <%= results[4][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Who is Your Favorite Arties</h2>
+    <ul>
+    <% for (var i=0; i<results[3].length; i++){ %>
+        <li><%= results[3][i].Arties %> :  <%= results[3][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>What Goals of User Interface have they meet</h2>
+    <ul>
+    <% for (var i=0; i<results[5].length; i++){ %>
+        <li><%= results[5][i].goals %> :  <%= results[5][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Please Rate this Website</h2>
+    <ul>
+    <% for (var i=0; i<results[1].length; i++){ %>
+        <li><%= results[1][i].rating %> :  <%= results[1][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Under what Enviroment did you complte this survey</h2>
+    <ul>
+    <% for (var i=0; i<results[7].length; i++){ %>
+        <li><%= results[7][i].Enviroment %> :  <%= results[7][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Additional Comments</h2>
+    <ul>
+    <% for (var i=0; i<results[8].length; i++){ %>
+        <li><%= results[8][i].messages %> :  <%= results[8][i].count %></li>
+    <% } %>    
+    </ul>
+    
+    
+    
+</body>
+</html>
